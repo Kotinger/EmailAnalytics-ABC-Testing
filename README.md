@@ -103,16 +103,6 @@ SRM vs 1/3 : 1/3 : 1/3: chi2 0.333, p 0.8466.
 
 ## Pipeline
 
-```text
-data/Kevin_Hillstrom_...csv
-        |
-        |- scripts/pipline.py     -> data/processed/clean.parquet
-        |- scripts/report.py      -> z-test + Welch + срезы + вердикт
-        |- scripts/load_mysql.py  -> MySQL email_abc.clean_users
-        |- sql/01 ... 06          -> schema, sanity, keys, KPI
-        |- powerbi/               -> .pbix + screenshot
-```
-
 | Файл | Назначение |
 |------|------------|
 | `scripts/pipline.py` | load, типы, drop dup, SRM, parquet |
